@@ -11,5 +11,5 @@ COPY install.sh oracle-driver-image/install.properties /extensions/
 COPY oracle-driver-image/modules /extensions/modules/
 
 # Download the driver into the module folder
-ADD ${ARTIFACT_MVN_REPO}/com/oracle/ojdbc7/12.1.0.1/ojdbc7-12.1.0.1.jar \
+ADD ${ARTIFACT_MVN_REPO} \
     /extensions/modules/system/layers/openshift/com/oracle/main/ojdbc7.jar
